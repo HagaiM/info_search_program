@@ -19,6 +19,11 @@ host='localhost'
 Execution:
 ----------------------------------------
 Run from CMD your file location:
+change files path:
+	csv_file_query1 = "/Users/hagaimanor/Downloads/query1_to_csv.csv"
+	csv_file_query2 = "/Users/hagaimanor/Downloads/query2_to_csv.csv"
+	json_file_query3 = "/Users/hagaimanor/Downloads/query3_to_json.json"
+	xml_file_query4 = "/Users/hagaimanor/Downloads/query4_to_xml.xml"
 python /Users/hagaimanor/Documents/PythonETLs/info_search.py
 
 Parameters:
