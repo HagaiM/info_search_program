@@ -174,10 +174,10 @@ def select_all_tasks(conn,query,operation,operation_type,write_to_file_path,year
                     title = row['Title']
                     country = row['Country']
                     year = row['year']
-                    xml = '<event album_name="{0}" country="{1}" year="{2}" sales_amount="{3}"></event>'.format(title, country ,year ,sales_amount)
+                    xml = '<album_info album_name="{0}" country="{1}" year="{2}" sales_amount="{3}"></event>'.format(title, country ,year ,sales_amount)
                     # xml = '<albums_info1111>'+xml+'</albums_info1111>'
                     return xml
-                res = '<albums_info>'+' '.join(df.apply(row_to_xml, axis=1))+'</albums_info>'
+                res = '<albums_data>'+' '.join(df.apply(row_to_xml, axis=1))+'</albums_data>'
                 if filename is None:
                     return res
                 with open(filename, mode) as f:
